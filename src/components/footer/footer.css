@@ -5,6 +5,7 @@ footer {
     border-top: 1px solid #393939;
     gap: 8rem;
     align-items: center;
+    
 }
 .footer-cauan {
     display: flex;
@@ -24,6 +25,7 @@ footer {
     display: flex;
     gap: 0.8rem;
     margin-top: 2rem;
+    color: rgb(224, 224, 224);;
 }
 .footer-icons-wrapper > a {
     display: -webkit-box;
@@ -50,7 +52,7 @@ background-color: transparent;
 transition: border-color 300ms ease, background-color 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
 transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease;
 transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
-color: #fff;
+
 text-decoration: none;
 cursor: pointer;
 }
@@ -62,4 +64,22 @@ background-color: #f8133c;
 transform: translate(0px, -3px);
 color: #fff;
 
+}
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+     text-align: center;
+     color: rgb(224, 224, 224);;
+}
+.footer-middle > h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.footer-middle > a {
+    color: rgb(224, 224, 224);
+    transition: 0.1s;
+}
+.footer-middle > a:hover {
+    color: #f8133c;
 }

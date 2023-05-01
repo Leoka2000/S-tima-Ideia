@@ -104,4 +104,9 @@ video {
   font-style: italic;
 }
 
-
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13rem 0 10rem 0;
+}

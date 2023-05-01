@@ -8,11 +8,15 @@
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.12.4",
     "react": "^18.2.0",
+    "react-blurhash": "^0.3.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "react-spinners": "^0.13.8",
+    "sweetalert2": "^11.7.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

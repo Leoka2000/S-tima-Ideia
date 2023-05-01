@@ -3,9 +3,9 @@ import Portfolio from './portfolio'
 
 const Index = () => {
   return (
-    <div>
+    <>
       <Portfolio/>
-    </div>
+    </>
   )
 }
 

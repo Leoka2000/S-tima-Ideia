@@ -68,7 +68,7 @@ font-size: 1.1rem;
 
 ul>li > a {
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
     font-weight: 500;
  
 }
@@ -76,7 +76,7 @@ ul>li > a {
 ul li .active {
 	color: #f8133c;
 	text-decoration: none;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 ul>li>a:hover {
     color: #f8133c;
@@ -258,7 +258,7 @@ top: 1rem;
         padding: 0.5rem 0 0.5rem 0;
         border-bottom: 1px solid #DBEEFD;
         width: 60%;
-        transition: 0.3s;
+        transition: 0.2s;
     }
     ul > li:hover {
         border-bottom: 1px solid #f8133c;
