@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* makes sizing simpler */
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  background-color: #121213;
+  font-family: 'General Sans', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.667em;
+ 
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Extralight.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-LightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.ttf') format('truetype'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.woff') format('woff'),
+       url('../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+

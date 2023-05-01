@@ -1,0 +1,78 @@
+.instagram-section {
+    padding: 0rem 0rem 7rem 0;
+    margin-top: 7rem;
+    display: flex;
+    gap: 1rem;
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+}
+
+.instagram-left {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8rem 0 0 5rem;
+}
+.instagram-left > h1 {
+    font-family: Barlow, sans-serif;
+color: #fff;
+font-size: 56px;
+line-height: 1.196em;
+font-weight: 900;
+text-transform: uppercase;
+}
+.instagram-left > p {
+    width: 20rem;
+    margin-bottom: 2rem
+}
+.instagram-right {
+    width: 80%;
+    background-image: linear-gradient(90deg, #121213 40%, transparent 70%);
+}
+
+.instagram-left > button {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  width: 15rem;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #f8133c;
+    -webkit-transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
+    transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
+    transition: box-shadow 300ms ease, transform 300ms ease;
+    transition: box-shadow 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+    font-family: 'General Sans', sans-serif;
+    color: #fff;
+    line-height: 1.111em;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.instagram-left > button:hover {
+    box-shadow: 0 10px 20px 0 rgba(248, 19, 60, 0.2);
+    -webkit-transform: translate3d(0px, -3px, 0.01px);
+    transform: translate3d(0px, -3px, 0.01px);
+    color: #fff;
+
+}
+.instagram-right {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../../assets/images/insta-img.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/insta-img.jpg");
+    
+    width: 50rem;
+   margin-bottom: -7rem;
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, auto 100vh;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+   
+}

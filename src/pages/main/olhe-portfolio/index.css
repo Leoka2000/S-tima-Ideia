@@ -1,0 +1,81 @@
+.look-portfolio-section {
+   padding: 8rem 0 8rem 0;
+display: flex;
+gap: 4rem;
+justify-content: center;
+position: relative;
+
+}
+.look-portfolio-left > img  {
+width: 37rem;
+border-style: solid;
+border-width: 1px;
+border-color: #393939;
+}
+.look-portfolio-right {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.look-portfolio-right > h1 {
+    font-size: 56px;
+line-height: 1.196em;
+font-weight: 900;
+text-transform: uppercase;
+font-family: Barlow, sans-serif;
+}
+.look-portfolio-right > button {
+    padding: 1rem;
+   margin-top: 2rem;
+    cursor: pointer;
+    width: 17rem;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+border: 1px solid transparent;
+border-radius: 2px;
+background-color: #f8133c;
+-webkit-transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
+transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
+transition: box-shadow 300ms ease, transform 300ms ease;
+transition: box-shadow 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+font-family: 'General Sans', sans-serif;
+color: #fff;
+line-height: 1.111em;
+font-weight: 700;
+text-align: center;
+text-decoration: none;
+text-transform: none;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+.look-portfolio-right > button:hover {
+    box-shadow: 0 10px 20px 0 rgba(248, 19, 60, 0.2);
+-webkit-transform: translate3d(0px, -3px, 0.01px);
+transform: translate3d(0px, -3px, 0.01px);
+color: #fff;
+
+}
+.silhouete {
+    position: absolute;
+    width: 15rem;
+    top: -2rem;
+    left: 0;
+    z-index: -1;
+    filter:contrast(0.1);
+   filter:blur(0.1);
+    filter:opacity(0.1)
+}
+.clown {
+    position: absolute;
+    width: 28rem;
+    top: -2rem;
+    right:-6rem;
+    z-index: -1;
+   filter: opacity(0.1);
+   
+}
