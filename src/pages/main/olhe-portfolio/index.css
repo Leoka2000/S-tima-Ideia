@@ -66,16 +66,16 @@ color: #fff;
     top: -2rem;
     left: 0;
     z-index: -1;
-    filter:contrast(0.1);
-   filter:blur(0.1);
-    filter:opacity(0.1)
+    filter:contrast(0.75);
+   
 }
 .clown {
     position: absolute;
-    width: 28rem;
+    width: 15rem;
     top: -2rem;
-    right:-6rem;
+    right: 0rem;
     z-index: -1;
-   filter: opacity(0.1);
+    
+   filter:contrast(0.8)
    
 }

@@ -7,6 +7,7 @@ import LookPortfolio from '../olhe-portfolio'
 import Video from '../video/video'
 import Instagram from '../instagram/instagram'
 import Form from '../contact/form'
+import Contact from '../contact'
 
 const index = () => {
   return (
@@ -18,7 +19,7 @@ const index = () => {
       <LookPortfolio/>
       <Video/>
       <Instagram/>
-      <Form/>
+      <Contact/>
     </>
   )
 }

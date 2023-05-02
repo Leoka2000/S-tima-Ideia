@@ -6,19 +6,27 @@ import './form.css'
 import Logo from '../../../assets/brand/logo.png'
 import Swal from 'sweetalert2';
 import img from '../../../assets/images/contato.jpg'
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion'
+
 
 
 const Form = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const [ref1, inView1] = useInView({
+        threshold: 0.6,
+        triggerOnce: true,
+        delay: 0.6
+    });
 
-   /* const sendEmail = (data) => {
-        emailjs.send('service_mykfjno', 'template_83sjaz8', data, 'Wz8QOl_kyPBr6ZQT1')
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            }, (error) => {
-                console.log('FAILED...', error);
-            });
-    }*/
+    /* const sendEmail = (data) => {
+         emailjs.send('service_mykfjno', 'template_83sjaz8', data, 'Wz8QOl_kyPBr6ZQT1')
+             .then((response) => {
+                 console.log('SUCCESS!', response.status, response.text);
+             }, (error) => {
+                 console.log('FAILED...', error);
+             });
+     }*/
 
     const onSubmit = (data) => {
 
@@ -29,13 +37,18 @@ const Form = () => {
             title: 'Your request has been successfully sent!',
             text: 'Keep an eye out for me in your email box. Press the button below to continue.'
         }).then(() => {
-        }); 
+        });
     }
 
     return (
-        <div className='form-section'>
+        <section className='form-section'>
             <div className='cauan-img'> </div>
-            <form onSubmit={handleSubmit(onSubmit)} action="/submit-form">
+            <motion.form
+                ref={ref1}
+                initial={{ opacity: 0 }}
+                animate={inView1 ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                onSubmit={handleSubmit(onSubmit)} action="/submit-form">
                 <header>
                     <h1>Get in touch!</h1>
                     <img src={Logo} />
@@ -77,8 +90,8 @@ const Form = () => {
                 <button className="form-button">SUBMIT</button>
 
 
-            </form>
-        </div>
+            </motion.form>
+        </section>
     )
 }
 

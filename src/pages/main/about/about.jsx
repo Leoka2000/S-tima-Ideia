@@ -6,6 +6,8 @@ import tattoogun from '../../../assets/icons/about-tattoo-machine-white.png';
 import { BsFillArrowThroughHeartFill } from 'react-icons/bs';
 import { motion, useTransform, useScroll, useViewportScroll } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+
 const About = () => {
   const { scrollY } = useScroll();
   const parallaxStrength = 0.28;
@@ -15,16 +17,27 @@ const About = () => {
     [5, window.innerHeight],
     [5, -window.innerHeight * parallaxStrength * 2]
   );
-  
+
   const secondImageY = useTransform(
     scrollY,
     [-20, window.innerHeight],
     [-20, window.innerHeight * parallaxStrength]
   );
 
+  const [ref1, inView1] = useInView({
+    threshold: 0.6,
+    triggerOnce: true,
+    delay: 1
+  });
+
   return (
     <section className='about-section'>
-      <main className='about-left'>
+      <motion.main
+        ref={ref1}
+        initial={{ opacity: 0 }}
+        animate={inView1 ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1 }}
+        className='about-left'>
         <h1>PORQUE ME ESCOLHER?</h1>
         <h2>
           Magna nisl egestas amet netus lectus malesuada diam et ullamcorper et
@@ -54,17 +67,17 @@ const About = () => {
           </div>
         </div>
         <Link to="/about"><button>Sobre mim</button></Link>
-      </main>
+      </motion.main>
       <div className='about-right'>
-     
-      <motion.div
-        className="thumbnail-about parallax-layer parallax-layer-1"
-        style={{ y: secondImageY }}
-      ></motion.div>
+
         <motion.div
-        className="thumbnail-about parallax-layer parallax-layer-2"
-        style={{ y: firstImageY }}
-      ></motion.div>
+          className="thumbnail-about parallax-layer parallax-layer-1"
+          style={{ y: secondImageY }}
+        ></motion.div>
+        <motion.div
+          className="thumbnail-about parallax-layer parallax-layer-2"
+          style={{ y: firstImageY }}
+        ></motion.div>
       </div>
     </section>
   );
