@@ -5,17 +5,18 @@ import silhouete from '../../../assets/icons/about-tattoo-machine.png'
 import clown from '../../../assets/icons/rose.png'
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const LookPortfolio = () => {
 
   const [ref1, inView1] = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true,
     delay: 0.7
   });
 
   const [ref2, inView2] = useInView({
-    threshold: 0.6,
+    threshold: 0.3,
     triggerOnce: true,
     delay: 0.9
   });
@@ -38,9 +39,9 @@ const LookPortfolio = () => {
         animate={inView2 ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 1 }}
         className='look-portfolio-right'>
-        <h1>Take a look at our tattoo portfolio</h1>
-        <p>Magna nisl egestas amet netus lectus malesuada diam et ullamcorper et in urna maecenas praesent ut vitae tempus sollicitudin pharetra ipsum molestie urna scelerisque</p>
-        <button>Descubra meu portfólio</button>
+        <h1>Confira o meu portfólio.</h1>
+        <p>Aqui, encontram-se uma seleção de minhas melhores produções até o momento. Se gostares de uma delas, você pode especificar a ID da tatuagem ao me contactar pelo instagram.</p>
+        <button><Link style={{textDecoration:'none', color: '#fff'}} to='/portfolio'>Descubra meu portfólio</Link></button>
       </motion.div>
 
     </section>

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './hero.css';
 import logo from '../../../assets/brand/logo.png';
-
+import { Link } from 'react-scroll';
 const Hero = () => {
   const text = "Sou o Cauan, um tatuador localizado em porto Alegre, RS";
 
@@ -36,8 +36,7 @@ const Hero = () => {
         </motion.h1>
         <h2>Aqui, você descobrirá mais acerca de mim e minha arte.</h2>
         <div>
-          <button className="colored-hero">Descubra mais</button>
-          <button className="transparent-hero">Descubra mais</button>
+          <Link to='about' className="colored-hero" style={{textDecoration: 'none'}} spy={true} smooth={true} offset={100} duration={500}>Descubra mais</Link>
         </div>
       </div>
     </section>

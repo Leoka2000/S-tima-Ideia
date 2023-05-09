@@ -52,20 +52,17 @@ const Navbar = () => {
             <img src={machine} alt='logo' />
             <p> Cauan Rossoni </p>
           </span>
-         
-            <div className='bagé'>
-              <button className='familia'>
-                <a onClick={showNavbar}>Familia Bagé</a>
-              </button>
-              {location.pathname === '/' && (
+          <div className='bagé'>
+            <a className='familia' style={{ textDecoration: 'none', color: '#fff' }} target='_blank' href='https://www.facebook.com/familiabagetattoo/?locale=pt_BR' onClick={showNavbar}>Familia Bagé</a>
+            {location.pathname === '/' && (
               <button className='nav-contact-btn'>
-                <Link onClick={showNavbar} to='/contact' spy={true} smooth={true} offset={100} duration={500}>
+                <LinkScroll style={{ textDecoration: 'none' }} onClick={showNavbar} spy={true} smooth={true} offset={100} duration={500} to='form' >
                   Contato
-                </Link>
+                </LinkScroll>
               </button>
-               )}
-            </div>
-         
+            )}
+          </div>
+
         </div>
         <button className='nav-btn' onClick={showNavbar}>
           <FaBars />

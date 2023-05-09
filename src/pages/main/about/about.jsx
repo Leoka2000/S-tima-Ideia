@@ -25,13 +25,13 @@ const About = () => {
   );
 
   const [ref1, inView1] = useInView({
-    threshold: 0.6,
+    threshold: 0.25,
     triggerOnce: true,
     delay: 1
   });
 
   return (
-    <section className='about-section'>
+    <section id='about' className='about-section'>
       <motion.main
         ref={ref1}
         initial={{ opacity: 0 }}
@@ -40,17 +40,14 @@ const About = () => {
         className='about-left'>
         <h1>PORQUE ME ESCOLHER?</h1>
         <h2>
-          Magna nisl egestas amet netus lectus malesuada diam et ullamcorper et
-          in urna maecenas praesent ut vitae tempus sollicitudin pharetra ipsum
-          molestie urna scelerisque
+        Com mais de 5 anos de experiência, tenho acumulado experiência principalmente em tatuagem realista e blackwork.
         </h2>
         <div>
           <img src={tattoogun} />
           <div>
             <h1>TATUAGENS COSTUMIZADAS</h1>
             <p>
-              Magna nisl egestas amet netus lectus Malesuada diamrper et in
-              lorem ist.
+            Como estamos lidando com tatuagens personalizadas, terei uma reunião com você antes da tatuagem para discutir ideias de design.
             </p>
           </div>
         </div>

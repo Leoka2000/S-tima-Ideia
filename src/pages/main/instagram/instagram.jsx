@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const Instagram = () => {
 
     const [ref1, inView1] = useInView({
-        threshold: 0.7,
+        threshold: 0.3,
         triggerOnce: true,
         delay: 0.9
     });
@@ -22,7 +22,7 @@ const Instagram = () => {
                 transition={{ duration: 1 }} className='instagram-left'>
                 <h1>ME SIGA NO INSTAGRAM</h1>
                 <p>O instagram é uma extenção natual do portfólio presente neste website. Lá, posto com frequência as tatuagens que realizo.</p>
-                <button>@setimaideia.ink</button>
+                <a target='_blank' href='https://www.instagram.com/setimaideia.ink/'>@setimaideia.ink</a>
             </motion.div>
             <div className='instagram-right'>
             </div>

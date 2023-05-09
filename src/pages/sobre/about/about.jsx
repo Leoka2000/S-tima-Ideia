@@ -11,8 +11,8 @@ const Sobre = () => {
     <section className='sobre-section'>
       <main>
         <div className='sobre-left'>
-          <h2>American old-school tattooist</h2>
-          <h1>Matt Cannon</h1>
+          <h2>Tatuador na Família Bagé, Porto Alegre</h2>
+          <h1>Cauan Rossoni Feversani</h1>
           <p>Magna nisl egestas amet netus lectus malesuada diam et ullamcorper et in urna maecenas praesent ut vitae tempus sollicitudin pharetra ipsum molestie urna scelerisque.</p>
           <div className='sobre-icons-wrapper'>
             <a>
