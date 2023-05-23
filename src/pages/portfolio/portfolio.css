@@ -224,6 +224,10 @@
       
     }
     
+    .no-scroll {
+      overflow: hidden;
+    }
+    
   
     @media (max-width: 768px) {
       .common-section {

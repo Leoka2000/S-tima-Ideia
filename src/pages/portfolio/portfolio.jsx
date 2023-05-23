@@ -50,13 +50,13 @@ const Portfolio = () => {
           className={selectedButtonIndex === 1 ? 'selected' : ''}
           onClick={() => handleFilter('colored', 1)}
         >
-          Colored
+          Colorida
         </button>
         <button
           className={selectedButtonIndex === 2 ? 'selected' : ''}
           onClick={() => handleFilter('black and white', 2)}
         >
-          Black and White
+          Preto e Branco
         </button>
       </div>
       <main ref={ref} className='photos-wrapper'>

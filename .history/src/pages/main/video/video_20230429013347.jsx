@@ -1,0 +1,49 @@
+import React, { useState } from 'react';
+import './video.css';
+import cauan from '../../../assets/videos/cauan-video.mp4'
+import thumb from '../../../assets/videos/thumb.jpg'
+import { FaPlay, FaTimes } from "react-icons/fa";
+
+function Video() {
+    const [showVideo, setShowVideo] = useState(false);
+
+    function handlePlayClick() {
+        setShowVideo(true);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function handleCloseClick() {
+        setShowVideo(false);
+        document.body.style.overflow = 'visible';
+    }
+
+    return (
+        <section className="video-thumbnail">
+            <div className='overlay-effect'>
+                <div
+                    className="thumbnail-image"
+                   
+                >
+                    <button
+                        className="play-button"
+                        onClick={handlePlayClick}
+                    >
+                        <FaPlay className="play-icon" />
+                    </button>
+                </div>
+                {showVideo && (
+                    <div className="video-overlay">
+                        <button className="close-button" onClick={handleCloseClick}>
+                            <FaTimes className="close-icon" />
+                        </button>
+                        <div className="video-wrapper">
+                            <video src={cauan} controls autoPlay />
+                        </div>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+}
+
+export default Video

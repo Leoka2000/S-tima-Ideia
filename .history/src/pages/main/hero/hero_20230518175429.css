@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900&display=swap');
+
+.hero-section {
+    padding: 8rem 0rem 15rem 0;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/hero-bg.jpg");
+
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    border-bottom: 1px solid #393939;
+
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-wrapper>img {
+    width: 24rem;
+}
+
+.hero-wrapper>h1 {
+    font-size: 4.2rem;
+    line-height: 5rem;
+    max-width: 70rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Barlow, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.hero-wrapper>h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'General Sans', sans-serif;
+}
+.hero-wrapper > div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.colored-hero {
+    padding: 1rem;
+  
+    cursor: pointer;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #96122a;
+    -webkit-transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
+    transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
+    transition: box-shadow 300ms ease, transform 300ms ease;
+    transition: box-shadow 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+    font-family: 'General Sans', sans-serif;
+    color: rgb(224, 224, 224);
+    line-height: 1.111em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.colored-hero:hover {
+    box-shadow: 0 10px 20px 0 rgba(248, 19, 60, 0.2);
+    -webkit-transform: translate3d(0px, -3px, 0.01px);
+    transform: translate3d(0px, -3px, 0.01px);
+    color: #fff;
+
+}
+
+.transparent-hero:hover {
+    background-color: #fff;
+    -webkit-transform: translate3d(0px, -3px, 0.01px);
+    transform: translate3d(0px, -3px, 0.01px);
+    color: #121213;
+}
+
+.transparent-hero {
+    padding: 0 1rem 0 1rem;
+    border-radius: 2px;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f0f0f0;
+    background-color: transparent;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+    transition: background-color 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+    transition: transform 300ms ease, background-color 300ms ease, color 300ms ease;
+    transition: transform 300ms ease, background-color 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+    font-family: 'General Sans', sans-serif;
+    color: #fff;
+    line-height: 1.111em;
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+@media screen and (max-width: 650px) {
+    .hero-wrapper>h1 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .hero-wrapper>h2 {
+        text-align: center;
+        margin-bottom: 0rem;
+        width: 20rem;
+    }  
+    .hero-section {
+        padding: 10rem 0rem 4rem 0;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/images/hero-bg.jpg");
+        background-position: 0px 0px, 50% 0%;
+background-size:69rem;
+background-repeat: repeat, no-repeat;
+background-attachment: scroll, fixed;
+    
+    }
+    } 
+
+
+@media screen and (max-width: 500px) {
+    .hero-wrapper{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .hero-wrapper>h1 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        max-width: 70rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align:center;
+        font-family: Barlow, sans-serif;
+        margin-bottom: 1rem;
+    }
+    .hero-wrapper>img {
+        width: 15rem;
+    }
+    .hero-wrapper>h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        font-family: 'General Sans', sans-serif;
+        text-align: center;
+        width: 16rem;
+    }
+    .hero-wrapper > div {
+        flex-direction: column;
+        width: 90%;
+    }
+    .hero-wrapper > div > a {
+       width: 100%;
+    }
+    
+    
+}
