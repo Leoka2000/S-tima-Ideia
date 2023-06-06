@@ -43,7 +43,7 @@ const Index = () => {
           </div>
           <div>
             <span><MdFastfood /></span>
-            <p>Para uma excelente e suave sessão, certifique-se de comer, se hidratar e descansar antes de realizar sua tatuagem.</p>
+            <p>Certifique-se de comer, se hidratar e descansar antes de realizer sua tatuagem.</p>
           </div>
           <div>
             <span><BsCapsulePill/></span>

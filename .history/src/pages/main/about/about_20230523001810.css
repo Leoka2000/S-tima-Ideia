@@ -169,9 +169,9 @@ color: #fff;
     
     .parallax-layer-2 {
         position: absolute;
-      left: -3rem;
-     width: 18rem;
-        top: 30rem;
+      left: -1rem;
+     width: 25rem;
+        top: 25rem;
         height: 25rem;
         z-index: 4;
            background-image: url("../../../assets/images/about-img2.jpg");
@@ -183,8 +183,8 @@ color: #fff;
         position: absolute;
       top:1rem;
       height: 25rem;
-      left: 5rem;
-      width: 22rem;
+      left: 12rem;
+      width: 25rem;
       }
 }
 @media screen and (max-width: 640px) {

@@ -124,7 +124,7 @@ transition: 0.3s;
 }
 @media (max-width: 950px) {
     footer > main {
-        gap: 9rem;
+        gap: 7rem;
     }
     }
 @media (max-width: 880px) {

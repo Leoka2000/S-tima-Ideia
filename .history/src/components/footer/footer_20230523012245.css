@@ -119,13 +119,12 @@ transition: 0.3s;
     footer > main {
         display: flex;
         justify-content: center;
-        gap: 11rem;
+        gap: 13rem;
     }
 }
-@media (max-width: 950px) {
+@media (max-width: 1270px) {
     footer > main {
-        gap: 9rem;
-    }
+    
     }
 @media (max-width: 880px) {
     .footer-icons-wrapper {

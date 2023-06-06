@@ -30,7 +30,7 @@ margin-bottom: 0.5rem;
 
 }
 .form-header > p {
-width: 700px;
+width: 650px;
 margin-bottom: 1.5rem;
 font-size: 1.2rem;
 line-height: 1.6rem;
@@ -226,9 +226,6 @@ textarea {
         margin-left: 0rem;
     
 }
-.form-header > p {
-    width: 600px;
-} 
 }
 @media (max-width: 868px) {
     form > header {

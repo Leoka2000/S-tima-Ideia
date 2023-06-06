@@ -226,9 +226,6 @@ textarea {
         margin-left: 0rem;
     
 }
-.form-header > p {
-    width: 600px;
-} 
 }
 @media (max-width: 868px) {
     form > header {

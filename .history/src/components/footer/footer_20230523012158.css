@@ -122,11 +122,6 @@ transition: 0.3s;
         gap: 11rem;
     }
 }
-@media (max-width: 950px) {
-    footer > main {
-        gap: 9rem;
-    }
-    }
 @media (max-width: 880px) {
     .footer-icons-wrapper {
         justify-content: center;

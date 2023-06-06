@@ -39,15 +39,15 @@ const Index = () => {
           </div>
           <div>
             <span><AiOutlineFieldTime /></span>
-            <p>Será necessário 48 horas de antecedência para cancelar ou reagendar uma sessão. Se você não conseguir fazer isso, será realizado outro agendamento e um pagamento de um depósito extra.</p>
+            <p>Será necessário 48 horas de antecedência para cancelar ou reagendar uma sessão. Se você não conseguir fazer isso, precisará marcar outro agendamento e pagar um depósito extra.</p>
           </div>
           <div>
             <span><MdFastfood /></span>
-            <p>Para uma excelente e suave sessão, certifique-se de comer, se hidratar e descansar antes de realizar sua tatuagem.</p>
+            <p>Certifique-se de comer, se hidratar e descansar antes de realizer sua tatuagem.</p>
           </div>
           <div>
             <span><BsCapsulePill/></span>
-            <p>É importante que você não se embriague no dia anterior ou durante a sessão, o que também inclui os efeitos de outras drogas.</p>
+            <p>Não venha de ressaca ou sob o efeito de drogas.</p>
           </div>
 
         </div>
